@@ -1,0 +1,4 @@
+- Peenser à mettre une image en arrière plan de la page de génération d'image ou trouver un design plus accueillant.
+- Rendre la page de génération de formulaire responsive
+- Peaufiner les interaction et le style de la page d'accueil
+- Rendre la page d'accueil responsive

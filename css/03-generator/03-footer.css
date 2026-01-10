@@ -1,0 +1,69 @@
+/* ==========================================================
+   FOOTER – STRUCTURE GLOBALE
+========================================================== */
+.main-footer {
+  position: relative;
+  background-color: #111;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Marcellus', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================
+   TEXTE DU FOOTER
+========================================================== */
+.main-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Accent marque / équipe */
+.main-footer strong {
+  color: #fc8c17;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.main-footer strong:hover {
+  color: #ffffff;
+}
+
+/* ==========================================================
+   EFFET LUMINEUX DISCRET (HAUT DU FOOTER)
+========================================================== */
+.main-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent),
+    transparent
+  );
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    font-size: 0.8rem;
+  }
+}

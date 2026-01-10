@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoly</title>
+    <link rel="stylesheet" href="./css/02-home/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- ===============================
+        FAVICON
+    ================================ -->
+    <link rel="icon" href="../assets/images/images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <!-- ===============================
+        HERO
+    ================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+
+        <!-- HEADER -->
+        <header class="hero-header">
+            <nav class="navbar" aria-label="Navigation principale">
+
+                <a href="/" class="logo" aria-label="Accueil Scoly">
+                    <img src="./assets/images/images/logo.png" alt="Logo Scoly" class="logo-img">
+                </a>
+
+                <ul class="nav-menu" role="menubar">
+
+                    <li role="none">
+                        <a href="#fonctionnement" role="menuitem">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Fonctionnement</span>
+                        </a>
+                    </li>
+
+                    <li role="none">
+                        <a href="#avantages" role="menuitem">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Avantages</span>
+                        </a>
+                    </li>
+
+                    <li role="none">
+                        <a href="#faq" role="menuitem">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span>FAQ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-cta" role="none">
+                        <a href="#en-savoir-plus" class="btn btn-secondary" role="menuitem">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <span>En savoir plus</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button
+                    class="burger"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </nav>
+        </header>
+
+        <!-- CONTENU HERO -->
+        <div class="hero-content">
+            <div class="hero-text">
+
+                <h1 id="hero-title">
+                    Bienvenue sur Scoly
+                </h1>
+
+                <p class="hero-description">
+                    Une plateforme simple et rapide pour créer vos
+                    certificats scolaires officiels.
+                </p>
+
+                <a href="#generer" class="btn btn-primary">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Générer mon certificat</span>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- BENEFICES -->
+        <ul class="hero-benefits" aria-label="Avantages principaux">
+            <li>
+                <i class="fa-solid fa-bolt"></i>
+                <span>Rapide</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Simple</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Fiable</span>
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- MENU MOBILE -->
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Navigation mobile">
+        <ul>
+            <li><a href="#fonctionnement"><i class="fa-solid fa-gears"></i> Fonctionnement</a></li>
+            <li><a href="#avantages"><i class="fa-solid fa-star"></i> Avantages</a></li>
+            <li><a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+            <li>
+                <a href="#en-savoir-plus" class="btn btn-secondary">
+                    <i class="fa-solid fa-arrow-right"></i> En savoir plus
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ===============================
+        HOW IT WORKS
+    ================================ -->
+    <section data-animate id="fonctionnement"  class="how-it-works animate-up" aria-labelledby="how-it-works-title">
+
+        <!-- ====== EN-TÊTE DE SECTION ====== -->
+        <header class="section-header">
+            <div class="section-eyebrow">
+                <span class="section-line "></span>
+                <span>Fonctionnement</span>
+                <span class="section-line "></span>
+            </div>
+
+            <h2 id="how-it-works-title">
+                Génération en 3 étapes
+            </h2>
+        </header>
+    
+        <!-- ====== ÉTAPES ====== -->
+        <ol class="steps" aria-label="Étapes de génération du certificat">
+    
+            <!-- Étape 1 -->
+            <li class="step-card">
+                <span class="step-number" aria-hidden="true">01</span>
+    
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+    
+                <h3 class="step-title">Renseignez</h3>
+    
+                <p class="step-description">
+                    Nom, école, classe…
+                </p>
+            </li>
+    
+            <!-- Étape 2 -->
+            <li class="step-card">
+                <span class="step-number" aria-hidden="true">02</span>
+    
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+    
+                <h3 class="step-title">Vérifiez</h3>
+    
+                <p class="step-description">
+                    Contrôle instantané
+                </p>
+            </li>
+    
+            <!-- Étape 3 -->
+            <li class="step-card">
+                <span class="step-number" aria-hidden="true">03</span>
+    
+                <div class="step-icon" aria-hidden="true">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                </div>
+    
+                <h3 class="step-title">Téléchargez</h3>
+    
+                <p class="step-description">
+                    PDF officiel prêt à l’usage
+                </p>
+            </li>
+    
+        </ol>
+    
+        <!-- ====== CALL TO ACTION ====== -->
+        <div class="section-cta">
+            <a
+                href="#generer"
+                class="btn btn-primary"
+                role="button"
+                aria-label="Générer mon certificat maintenant"
+            >
+                Générer mon certificat
+            </a>
+        </div>
+    
+    </section>
+
+    <!-- ===============================
+        ADVANTAGES
+    ================================ -->
+    <section data-animate id="avantages" class="why-scoly animate-up" aria-labelledby="why-scoly-title">
+
+        <!-- ====== EN-TÊTE DE SECTION ====== -->
+        <header class="section-header">
+            <div class="section-eyebrow">
+                <span class="section-line "></span>
+                <span>Avantages</span>
+                <span class="section-line "></span>
+            </div>
+    
+            <h2 id="why-scoly-title">
+                Une solution simple et efficace
+            </h2>
+        </header>
+
+    
+        <!-- ====== LISTE DES AVANTAGES ====== -->
+        <ul class="features" aria-label="Avantages de la plateforme Scoly">
+    
+            <!-- Avantage 1 : Rapide -->
+            <li class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+    
+                <h3 class="feature-title">Rapide</h3>
+    
+                <p class="feature-description">
+                    Générez un certificat en quelques secondes
+                </p>
+            </li>
+    
+            <!-- Avantage 2 : Simple -->
+            <li class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+    
+                <h3 class="feature-title">Simple</h3>
+    
+                <p class="feature-description">
+                    Une interface claire et accessible à tous
+                </p>
+            </li>
+    
+            <!-- Avantage 3 : Fiable -->
+            <li class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+    
+                <h3 class="feature-title">Fiable</h3>
+    
+                <p class="feature-description">
+                    Certificats structurés et conformes
+                </p>
+            </li>
+    
+            <!-- Avantage 4 : Officiel -->
+            <li class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+    
+                <h3 class="feature-title">Officiel</h3>
+    
+                <p class="feature-description">
+                    Documents clairs et prêts à l'usage
+                </p>
+            </li>
+    
+        </ul>
+    
+    </section>
+
+    <!-- ===============================
+        ABOUT
+    ================================ -->
+    <section data-animate id="about" class="about-scoly animate-up" aria-labelledby="about-title">
+        <!-- ====== EN-TÊTE DE SECTION ====== -->
+        <header class="section-header">
+            <div class="section-eyebrow">
+                <span class="section-line "></span>
+                <span>Présentation</span>
+                <span class="section-line "></span>
+            </div>
+            <h2 id="how-it-works-title">
+                La plateforme des démarches modernes
+            </h2>
+        </header>
+
+        <!-- ====== CONTENU ====== -->
+        <div class="about-content">
+    
+            <!-- TEXTE -->
+            <div class="about-text">
+    
+                <p class="about-description">
+                    Scoly aide les établissements et les étudiants à générer
+                    des certificats de scolarité rapidement, sans complexité,
+                    tout en respectant les standards officiels.
+                </p>
+    
+                <div class="about-mission">
+                    <h3 class="mission-title">
+                        <i class="fa-solid fa-bullseye"></i>
+                        Notre mission
+                    </h3>
+    
+                    <p class="mission-text">
+                        Simplifier les procédures scolaires grâce à des outils
+                        numériques clairs, fiables et accessibles.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <!-- IMAGE -->
+            <div class="about-visual">
+                <img
+                    src="./assets/images/images/about.png"
+                    alt="Illustration représentant la génération de certificats scolaires"
+                    loading="lazy"
+                >
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- ===============================
+        TESTIMONIALS
+    ================================ -->
+    <section  data-animate id="testimonials" class="testimonials-scoly animate-up" aria-labelledby="testimonials-title">
+        <header class="section-header">
+            <div class="section-eyebrow">
+                <span class="section-line "></span>
+                <span>Témoignages</span>
+                <span class="section-line "></span>
+            </div>
+            <h2 id="how-it-works-title">
+                Ils font confiance à Scoly
+            </h2>
+        </header>
+
+        <!-- ====== CONTENU ====== -->
+        <div class="testimonials-content">
+
+            <!-- CARTE DE TÉMOIGNAGE -->
+            <article class="testimonial-card">
+
+                <!-- ICÔNE CITATION -->
+                <div class="testimonial-quote-icon" aria-hidden="true">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <!-- TEXTE -->
+                <blockquote class="testimonial-text">
+                    Scoly nous a permis de générer des certificats de scolarité
+                    en quelques secondes. L’interface est claire, rapide
+                    et très professionnelle.
+                </blockquote>
+
+                <!-- AUTEUR -->
+                <footer class="testimonial-author">
+                    <p class="author-name">Jean Dupont</p>
+                    <p class="author-role">Responsable administratif</p>
+                </footer>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+     FAQ
+    ================================ -->
+    <section  data-animate id="faq" class="faq-scoly animate-up" aria-labelledby="faq-title">
+        <!-- ====== EN-TÊTE DE SECTION ====== -->
+        <header class="section-header">
+            <div class="section-eyebrow">
+                <span class="section-line "></span>
+                <span>FAQ</span>
+                <span class="section-line "></span>
+            </div>
+            <h2 id="how-it-works-title">
+                Questions fréquentes
+            </h2>
+        </header>
+
+        <!-- ====== CONTENU FAQ ====== -->
+        <div class="faq-content">
+
+            <!-- FAQ 1 -->
+            <article class="faq-item">
+                <header class="faq-question">
+                    <h3>Le certificat généré est-il officiel ?</h3>
+
+                    <span class="faq-icon" aria-hidden="true">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                </header>
+
+                <div class="faq-answer">
+                    <p>
+                        Oui. Les certificats générés par Scoly sont structurés selon
+                        un format officiel conforme aux standards administratifs.
+                        Ils contiennent toutes les informations nécessaires
+                        (identité, établissement, année scolaire) et sont prêts
+                        à être utilisés pour vos démarches.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FAQ 2 -->
+            <article class="faq-item">
+                <header class="faq-question">
+                    <h3>Qui peut utiliser Scoly ?</h3>
+
+                    <span class="faq-icon" aria-hidden="true">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                </header>
+
+                <div class="faq-answer">
+                    <p>
+                        Scoly est destiné aux élèves, étudiants, parents,
+                        responsables légaux ainsi qu’aux établissements scolaires.
+                        Toute personne ayant besoin d’un certificat de scolarité
+                        peut utiliser la plateforme de manière simple et rapide.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FAQ 3 -->
+            <article class="faq-item">
+                <header class="faq-question">
+                    <h3>Le service est-il gratuit ?</h3>
+
+                    <span class="faq-icon" aria-hidden="true">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                </header>
+
+                <div class="faq-answer">
+                    <p>
+                        Oui. La génération de certificats via Scoly est entièrement
+                        gratuite. Aucun frais caché n’est appliqué et
+                        l’accès aux fonctionnalités essentielles reste libre
+                        pour tous les utilisateurs.
+                    </p>
+                </div>
+            </article>
+
+            <!-- FAQ 4 -->
+            <article class="faq-item">
+                <header class="faq-question">
+                    <h3>Puis-je modifier un certificat après génération ?</h3>
+
+                    <span class="faq-icon" aria-hidden="true">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                </header>
+
+                <div class="faq-answer">
+                    <p>
+                        Oui. Tant que le certificat n’a pas été téléchargé ou validé
+                        définitivement, vous pouvez corriger ou ajuster les informations
+                        saisies. Cela permet d’éviter toute erreur avant l’utilisation
+                        officielle du document.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===============================
+        FOOTER
+    ================================ -->
+    <footer id="footer-scoly" class="footer-scoly" role="contentinfo">
+
+        <!-- ====== CONTENU PRINCIPAL ====== -->
+        <div class="footer-container">
+
+            <!-- BRAND -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img
+                        src="./assets/images/images/logo.png"
+                        alt="Logo Scoly"
+                        loading="lazy"
+                    >
+                </div>
+
+                <p class="footer-description">
+                    Plateforme de génération de certificats de scolarité
+                </p>
+
+                <p class="footer-tagline">
+                    Simple • Rapide • Officiel
+                </p>
+            </div>
+
+            <!-- LIENS UTILES -->
+            <nav class="footer-column" aria-labelledby="footer-links-title">
+                <h3 id="footer-links-title" class="footer-title">
+                    Liens utiles
+                </h3>
+
+                <ul class="footer-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#generer">Générer un certificat</a></li>
+                </ul>
+            </nav>
+
+            <!-- INFORMATIONS -->
+            <nav class="footer-column" aria-labelledby="footer-info-title">
+                <h3 id="footer-info-title" class="footer-title">
+                    Informations
+                </h3>
+
+                <ul class="footer-links">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#mentions-legales">Mentions légales</a></li>
+                    <li><a href="#confidentialite">Politique de confidentialité</a></li>
+                </ul>
+            </nav>
+
+            <!-- SÉCURITÉ -->
+            <div class="footer-column footer-security">
+                <h3 class="footer-title">
+                    Sécurité
+                </h3>
+
+                <p class="footer-security-item">
+                    <i class="fa-solid fa-shield-check" aria-hidden="true"></i>
+                    Données sécurisées
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ====== BAS DE FOOTER ====== -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025 Scoly. Tous droits réservés.
+            </p>
+
+            <p class="footer-credit">
+                Développé par <strong>L&D Dynamics</strong>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="./js/02-home/faq.js"></script>
+    <script src="./js/01-global/reveal.js"></script>
+    <script src="./js/02-home/buger.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

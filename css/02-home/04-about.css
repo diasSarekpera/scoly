@@ -1,0 +1,208 @@
+/* =========================================================
+   SECTION : ABOUT SCOLY
+========================================================= */
+
+.about-scoly {
+    position: relative;
+    padding: 7rem 3rem;
+    background: linear-gradient(180deg, #f7f9fe 0%, #ffffff 100%);
+    overflow: hidden;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.about-scoly .section-header {
+    max-width: 760px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.about-scoly h2 {
+    margin: 0 0 1.2rem;
+    font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.28;
+    color: #0f172a;
+}
+
+.about-scoly h2 strong {
+    color: #3b5bfd;
+    font-weight: 700;
+}
+
+/* =========================================================
+   CONTENT LAYOUT
+========================================================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(2.5rem, 5vw, 4rem);
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   TEXT BLOCK
+========================================================= */
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-description {
+    max-width: 520px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #475569;
+}
+
+/* =========================================================
+   MISSION CALLOUT
+========================================================= */
+
+.about-mission {
+    padding: 1.5rem 1.75rem;
+    background: #f1f4ff;
+    border-left: 4px solid #4f6dff;
+    border-radius: 0.75rem;
+}
+
+.mission-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.mission-title i {
+    font-size: 1.1rem;
+    color: #4f6dff;
+}
+
+.mission-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.about-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-visual img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+
+    border-radius: 1rem;
+    filter: drop-shadow(0 20px 40px rgba(15, 23, 42, 0.12));
+}
+
+/* =========================================================
+   RESPONSIVE ≤ 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-description {
+        margin: 0 auto;
+    }
+
+    .about-mission {
+        text-align: left;
+    }
+
+    .about-visual {
+        order: -1;
+    }
+}
+
+/* =========================================================
+   MOBILE OPTIMISATION ≤ 600px (PRIORITAIRE)
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* SECTION */
+    .about-scoly {
+        padding: 4.5rem 1.2rem;
+    }
+
+    /* HEADER */
+    .about-scoly .section-header {
+        margin-bottom: 3rem;
+        padding: 0 0.5rem;
+    }
+
+    .about-scoly h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.65rem;
+        line-height: 1.3;
+    }
+
+    /* CONTENT */
+    .about-content {
+        gap: 2.2rem;
+    }
+
+    /* TEXT */
+    .about-text {
+        gap: 1.6rem;
+    }
+
+    .about-description {
+        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* MISSION */
+    .about-mission {
+        padding: 1.2rem 1.4rem;
+        border-left-width: 3px;
+        border-radius: 0.65rem;
+    }
+
+    .mission-title {
+        font-size: 1rem;
+    }
+
+    .mission-title i {
+        font-size: 1rem;
+    }
+
+    .mission-text {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    /* IMAGE */
+    .about-visual img {
+        max-width: 100%;
+        border-radius: 0.85rem;
+        filter: drop-shadow(0 14px 28px rgba(15, 23, 42, 0.14));
+    }
+}

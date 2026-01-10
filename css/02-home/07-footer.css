@@ -1,0 +1,267 @@
+/* =====================================================
+   FOOTER – SCOLY (STRUCTURÉ & OPTIMISÉ)
+===================================================== */
+
+/* =========================
+   SECTION
+========================= */
+
+.footer-scoly {
+    position: relative;
+    padding: 5rem 1.5rem 2.5rem;
+    color: #e5ecff;
+    background:
+        radial-gradient(circle at top, rgba(255,255,255,0.15), transparent 55%),
+        linear-gradient(180deg, #2b3f8f 0%, #1f2f6d 50%, #18255a 100%);
+    overflow: hidden;
+}
+
+.footer-scoly::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(rgba(255,255,255,0.35) 1px, transparent 1px),
+        radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+    background-size: 90px 90px, 140px 140px;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.footer-scoly > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto 3.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+    max-width: 360px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.9rem;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-description {
+    margin: 0 0 0.4rem;
+    font-size: 0.95rem;
+    color: #dbe4ff;
+}
+
+.footer-tagline {
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: #b6c7ff;
+}
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    margin: 0 0 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li + li {
+    margin-top: 0.75rem;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #dbe4ff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd88a;
+    transform: translateX(4px);
+}
+
+/* =========================
+   SECURITY
+========================= */
+
+.footer-security-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: #dbe4ff;
+}
+
+.footer-security-item i {
+    font-size: 1.1rem;
+    color: #ffd88a;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #c7d2fe;
+}
+
+.footer-credit strong {
+    color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE ≤ 1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+/* =========================
+   RESPONSIVE ≤ 640px
+========================= */
+
+@media (max-width: 640px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand {
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-security-item {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+}
+
+/* =========================
+   RESPONSIVE ≤ 600px
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer-scoly {
+        padding: 4rem 1.2rem 2.2rem;
+    }
+
+    .footer-container {
+        gap: 2.8rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .footer-logo img {
+        width: 72px;
+    }
+
+    .footer-description {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    .footer-tagline {
+        font-size: 0.8rem;
+    }
+
+    .footer-title {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-links li + li {
+        margin-top: 0.65rem;
+    }
+
+    .footer-links a {
+        font-size: 0.88rem;
+    }
+
+    .footer-links a:hover {
+        transform: none;
+    }
+
+    .footer-security-item {
+        font-size: 0.88rem;
+        gap: 0.5rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.6rem;
+        gap: 0.6rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+}
