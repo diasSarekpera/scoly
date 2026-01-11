@@ -17,7 +17,6 @@
     --transition: 0.3s ease;
 }
 
-
 /* =========================================
    HERO – BASE
 ========================================= */
@@ -483,6 +482,26 @@
 
 
 
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        transform: translateY(-5%);
+    }
+}
 
 
 
